@@ -1,0 +1,184 @@
+.intro {
+    width: 100%;
+    padding-top: 170px;
+}
+
+.intro .title {
+    text-align: left;
+    align-items: center;
+    justify-content: left;
+}
+
+.intro .title h1 {
+    color: var(--main-color);
+    font-size: 5rem;
+    font-weight: 800;
+}
+
+.intro .title h2 {
+    color: var(--white-color);
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+.intro-text {
+    width: 100%;
+    align-items: center;
+    min-height: 50vh;
+    display: flex;
+}
+
+.intro-text p strong {
+    color: var(--main-color);
+    font-size: 2.1rem;
+    font-weight: 800;
+}
+
+.intro-text p {
+    font-weight: 200;
+    width: 60%;
+    text-align: justify;
+}
+
+.intro-text img {
+    width: 50%;
+    height: auto;
+}
+
+.long-text1 {
+    text-align: right;
+    margin-top: 20px;
+    margin-left: 300px;
+}
+
+.long-text1 h3 {
+    font-size: 4rem;
+    color: var(--main-color);
+
+}
+
+.long-text1 p {
+    font-weight: 200;
+    font-size: 1rem;
+}
+
+.long-text2 {
+    text-align: justify;
+    text-align-last: right;
+    margin-top: 30px;
+    width: 100%;
+    height: 15vh;
+}
+
+.long-text2 p {
+    font-weight: 200;
+    font-size: 1rem;
+}
+
+.navigatContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+.navigatContainer .cutecuteTitle {
+    width: 40%;
+}
+
+.cutecuteTitle h1 {
+    font-size: 4rem;
+    color: var(--main-color);
+    text-align: left;
+}
+
+.cutecuteTitle p {
+    font-size: 1.2rem;
+    font-weight: 200;
+    width: 100%;
+    text-align: left;
+}
+
+.navigatContainer .threeLittleBox {
+    width: 70%;
+}
+
+.navigatContainer .littleBoxbox {
+    padding: 20px 0px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    height: 25vh;
+}
+
+.navigatContainer .littleBoxbox h3 {
+    font-size: 1.8rem;
+    color: var(--white-color);
+}
+
+.navigatContainer .littleBoxbox p {
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+.littleBoxbox .boxboxText {
+    width: 100%;
+    margin-right: 70px;
+}
+
+.boxbox-btn{
+    font-size: 1rem;
+    margin: 5px 20px;
+    width: 170px;
+    height: 90px;
+    padding: 20px 25px;
+    background: transparent;
+    border: none;
+    color: var(--text-color);
+    position: relative;
+    transition: background 0.4s;
+    cursor: pointer;
+    box-shadow: 0.4s, color 0.4s;
+    transition-delay: 0s;
+    font-size: 18px;
+}
+
+.boxbox-btn::after{
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid var(--main-color);
+    border-left: 2px solid var(--main-color);
+    transition: width 0.4s, height 0.4s;
+    transition-delay: 0.4s;
+}
+
+.boxbox-btn::before{
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    right: -1px;
+    width: 10px;
+    height: 10px;
+    border-bottom: 2px solid var(--main-color);
+    border-right: 2px solid var(--main-color);
+    transition: width 0.4s, height 0.4s;
+    transition-delay: 0.4s;
+}
+
+.boxbox-btn:hover::after,
+.boxbox-btn:hover::before{
+    width: 100%;
+    height: 100%;
+    transition-delay: 0s;
+}
+
+.boxbox-btn:hover{
+    background-color: var(--main-color);
+    color: #fff;
+    box-shadow: 0 0 20px var(--main-color);
+    transition-delay: 0.4s;
+}

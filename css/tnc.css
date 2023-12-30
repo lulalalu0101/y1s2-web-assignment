@@ -1,0 +1,152 @@
+.container {
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.container .heading-text {
+    background: rgba(0, 0, 0, .5);
+    padding: 30px 40px;
+    border-radius: 28px;
+    margin: 35px 0px;
+    transition: .5s;
+}
+
+.container .heading-text > h1{
+    color: var(--main-color);
+    font-size: 3rem;
+    letter-spacing: 1px;
+    margin: 10px 0px;
+    font-weight: 800;
+}
+
+.container .heading-text > h3 {
+    font-size: 1.3rem;
+    color: var(--white-color);
+    margin-bottom: 10px;
+}
+
+.container .heading-text > p {
+    font-weight: 200;
+    text-align: justify;
+    letter-spacing: .8px;
+    margin: 10px 0px 18px 0px;
+}
+
+.detail-text {
+    padding: 20px 40px;
+    margin-top: 50px;
+}
+
+.detail-text .box {
+    padding: 22px 24px;
+    background: rgba(0, 0, 0, .5);
+    border-radius: 18px;
+    text-align: center;
+    transition: .5s;
+}
+
+.detail-text .box h1 {
+    font-size: 22px;
+    font-weight: 800;
+    color: var(--white-color);
+    margin: 10px 0px;
+}
+
+.detail-text .box p {
+    font-size: 18px;
+    font-weight: 200;
+    margin: 0px 20px;
+}
+
+.detail-text .text1 {
+    margin-right: 530px;
+}
+
+.detail-text .text2 {
+    margin-left: 530px;
+}
+
+.detail-text .box:hover {
+    transform: scale(1.1);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.otherBrand {
+    padding: 30px 0px;
+    align-items: center;
+    justify-content: center;
+}
+
+.otherBrand h1 {
+    font-size: 3rem;
+    color: var(--text-color);
+    font-weight: 800;
+    margin: 50px 0px;
+    letter-spacing: 1.5px;
+    text-align: center;
+}
+
+.otherBrand img {
+    filter: drop-shadow(0 0 .5rem rgba(255, 255, 255, 0.3));
+}
+
+/* go back button */
+
+.goback {
+    text-align: center;
+    padding-top: 90px;
+}
+
+.goback .btn {
+    font-size: 1.25rem;
+    padding: 20px 40px;
+    background: transparent;
+    border: none;
+    color: var(--text-color);
+    position: relative;
+    transition: background 0.4s;
+    cursor: pointer;
+    box-shadow: 0.4s, color 0.4s;
+    transition-delay: 0s;
+}
+
+.btn::after{
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid var(--main-color);
+    border-left: 2px solid var(--main-color);
+    transition: width 0.4s, height 0.4s;
+    transition-delay: 0.4s;
+}
+
+.btn::before{
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    right: -1px;
+    width: 10px;
+    height: 10px;
+    border-bottom: 2px solid var(--main-color);
+    border-right: 2px solid var(--main-color);
+    transition: width 0.4s, height 0.4s;
+    transition-delay: 0.4s;
+}
+
+.btn:hover::after,
+.btn:hover::before{
+    width: 100%;
+    height: 100%;
+    transition-delay: 0s;
+}
+
+.btn:hover{
+    background-color: var(--main-color);
+    color: #fff;
+    box-shadow: 0 0 20px var(--main-color);
+    transition-delay: 0.4s;
+}

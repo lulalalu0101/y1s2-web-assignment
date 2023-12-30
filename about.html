@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="/css/root.css">
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/about.css">
+    <link rel="stylesheet" href="/css/cart.css">
+    <link rel="shortcut icon" href="/image/small-logo.PNG" type="image/x-icon">
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="header">
+        <h1 class="logo"><a href="#"><img src="/image/main-logo.png" alt="MCSON Technology" width="192" height="105"></a></h1>
+
+        <ul class="nav">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="product.html">Product</a></li>
+            <li><a href="event.html">Event</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="icon-cart">
+            <img src="/icon/cart-white.png" alt="" width="30px" height="30px">
+            <span>0</span>
+        </div>
+    </header>
+
+    <!-- Cart -->
+    <div class="cartTab">
+        <h1>Shopping Cart</h1>
+        <div class="listCart">
+        </div>
+        
+        <div class="cart-btn">
+            <button class="close">Close</button>
+            <button class="checkOut" onclick="checkOut()">Check Out</button>
+        </div>
+    </div>
+
+    <!-- Intro -->
+    <section class="intro">
+        <div class="title">
+            <h1>MCSON Technology</h1>
+            <h2>Service & Trading</h2>
+        </div>
+
+        <div class="intro-text">
+            <p><strong>Welcome to MCSON TECHNOLOGY,</strong><br>in our computer store where technology meets innovation! We pride to being the ultimate destination to meet all your computing needs. Located in the heart of Malaysia, we offer a comprehensive range of top-tier gaming PCs and services designed to enhance your gaming experience. Whether you're a gaming enthusiast or a creative professional seeking reliable solutions, our store is your haven for premium quality, expert guidance, and unparalleled customer service. Step into the world of endless possibilities and discover the perfect fusion of performance, reliability, and style in every piece of technology.
+            </p>
+            <img src="/image/about-intro.png" alt="">
+        </div>
+
+        <div class="long-text1">
+            <h3>About MCSON...</h3>
+            <p>MCSON TECHNOLOGY is a company dedicated to computer trading and service business. The company was established on JANUARY 1, 2023 year in Malaysia. The company started by recommending gaming series computers to users to meet thier advanced technology needs.
+            </p>
+        </div>
+
+        <div class="long-text2">
+            <p>Human learning has created one of the greatest invention called gaming computer and has recently become famous in this society, we explore the advantages and joy of gaming technology and bring it to people for enjoyment. Gaming laptop later were also brought into our lives, and we started to began to promote the market by selling the gaming laptop. The difference between a regular computer and a gaming laptop is that gaming laptops have advanced systems built inside to provide high-spec operation and stablize the computer's temperature so that the computer continue to run. We are also providing services to users to solve thier problems and solution on technical requirement. We have proven and reliant professional skilled technician on the spot and our technical capabilities focus on hardware specialist technician to provide every consumer with convenient assist and support. The company places requirements and training on technicians to handle many technical issues in the field, the services is not only to assist on customer's issues but all consumers request.
+            </p>
+        </div>
+    </section>
+
+    <!-- 3 navigate -->
+    <section>
+        <div class="navigatContainer">
+            <div class="cutecuteTitle">
+                <h1>Services</h1>
+                <p>Your confront, We got solution</p>
+            </div>
+            <div class="threeLittleBox">
+                <div class="littleBoxbox">
+                    <div class="boxboxText">
+                        <h3>Discover answers to commonly asked questions</h3>
+                        <p>Your go-to resource for quick insights and helpful information. <br>Your questions will be answered in the FAQ.</p>
+                    </div>
+                    <div class="boxboxBtn">
+                        <button type="button" class="boxbox-btn" onclick="faqLink()"><span></span>Accordian FAQ</button>
+                    </div>
+                </div>
+                <div class="littleBoxbox">
+                    <div class="boxboxText">
+                        <h3>Uncover honest insights and opinions</h3>
+                        <p>A space for reviews that guide your choices with authentic experiences. <br>Customers express their trust through their reviews.</p>
+                    </div>
+                    <div class="boxboxBtn">
+                        <button type="button" class="boxbox-btn" onclick="reviewLink()"><span></span>Review</button>
+                    </div>
+                </div>
+                <div class="littleBoxbox">
+                    <div class="boxboxText">
+                        <h3>Navigate confidently</h3>
+                        <p>Explore the terms and conditions that define our partnership, ensuring clarity and transparency for a seamless collaboration. <br>Our policy safeguards the trust you place in us</p>
+                    </div>
+                    <div class="boxboxBtn">
+                        <button type="button" class="boxbox-btn" onclick="tncLink()"><span></span>Terms & Conditions</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <section class="footer" id="footer">
+        <div class="footer-content">
+            <h4>Location</h4>
+            <p>Bangunan Tan Sri Khaw Kai Boh (Block A),<br>Jalan Genting Kelang, Setapak, <br>53300 Kuala Lumpur, Federal Territory of Kuala Lumpur</p>
+            
+            <div class="footer-icon">
+                <a target="_blank" href="https://www.facebook.com/tarumtkl/"><img src="/icon/facebook-purple.png" alt=""></a>
+                <a target="_blank" href="https://www.instagram.com/tarumt.official/?hl=en"><img src="/icon/instagram-purple.png" alt=""></a>
+                <a target="_blank" href="https://www.youtube.com/channel/UCqjsPpVnwjCRT5mgAgFo1ng?themeRefresh=1"><img src="/icon/youtube-purple.png" alt=""></a>
+                <a target="_blank" href="https://www.google.com/search?q=tarumt&oq=tarumt&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIJCAEQLhgKGIAEMgcIAhAAGIAEMgYIAxBFGDsyBggEEEUYOzIGCAUQRRg8MgYIBhAFGEAyBggHEEUYPNIBCDI3MjlqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8"><img src="/icon/google-purple.png" alt=""></a>
+            </div>
+        </div>
+
+        <div class="footer-map">
+            <h4>This is where we are</h4>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15934.15124864288!2d101.71625741738283!3d3.2152552000000023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc3843bfb6a031%3A0x2dc5e067aae3ab84!2sTunku%20Abdul%20Rahman%20University%20of%20Management%20and%20Technology%20(TAR%20UMT)!5e0!3m2!1sen!2smy!4v1701422202112!5m2!1sen!2smy" width="300" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+        <div class="footer-text">
+            <div class="footer-content">
+                <h4>Link</h4>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </div>
+    
+            <div class="footer-content">
+                <h4>Our Team</h4>
+                <li><a href="#">Low Jun Weng</a></li>
+                <li><a href="#">Eric Liau Yi Kai</a></li>
+                <li><a href="#">Shak Li Juin</a></li>
+                <li><a href="#">Pua Jie Hui</a></li>
+            </div>
+        </div>
+    </section>
+    
+    <script src="/js/cart.js"></script>
+    <script src="/js/about.js"></script>
+</body>
+</html>

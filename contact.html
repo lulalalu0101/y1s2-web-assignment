@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="shortcut icon" href="/image/small-logo.PNG" type="image/x-icon">
+    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="/css/root.css">
+    <link rel="stylesheet" href="/css/cart.css">
+    <link rel="stylesheet" href="/css/base.css">
+</head>
+<body>
+
+    <!-- navbar -->
+    <header class="header">
+        <h1 class="logo"><a href="#"><img src="/image/main-logo.png" alt="MCSON Technology" width="192" height="105"></a></h1>
+
+        <ul class="nav">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="product.html">Product</a></li>
+            <li><a href="event.html">Event</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="icon-cart">
+            <img src="/icon/cart-white.png" alt="" width="30px" height="30px">
+            <span>0</span>
+        </div>
+    </header>
+
+    <!-- Cart -->
+    <div class="cartTab">
+        <h1>Shopping Cart</h1>
+        <div class="listCart">
+        </div>
+        
+        <div class="cart-btn">
+            <button class="close">Close</button>
+            <button class="checkOut" onclick="checkOut()">Check Out</button>
+        </div>
+    </div>
+
+    <div class="contactUs">
+        <div class="title">
+            <h2>Get in Touch</h2>
+        </div>
+        <div class="box">
+
+            <!-- Form -->
+            <div class="contact form">
+                <h3>Send a Message</h3>
+                <form>
+                    <div class="formbox">
+                        <div class="row50">
+                            <div class="inputBox">
+                                <span>First Name</span>
+                                <input type="text" class="fName" placeholder="John">
+                            </div>
+                            <div class="inputBox">
+                                <span>Last Name</span>
+                                <input type="text" class="lName" placeholder="Doe">
+                            </div>
+                        </div>
+
+                        <div class="row50">
+                            <div class="inputBox">
+                                <span>Email</span>
+                                <input type="text" class="mail" placeholder="johndoe@gmail.com">
+                            </div>
+                            <div class="inputBox">
+                                <span>Mobile</span>
+                                <input type="text" class="mobile" placeholder="+60 12 3456789">
+                            </div>
+                        </div>
+
+                        <div class="row100">
+                            <div class="inputBox">
+                                <span>Message</span>
+                                <textarea class="message" placeholder="Write your Message here!"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="row100">
+                            <div class="inputBox">
+                                <button type="button" class="contact-btn" onclick="popup()"><span></span>Send</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Info -->
+            <div class="contact info">
+                <h3>Contact Info</h3>
+                <div class="infobox">
+                    <div>
+                        <span><img src="/icon/map.png" alt="" width="20px" height="20px"></span>
+                        <p>Setapak, Kuala Lumpur <br>MALAYSIA</p>
+                    </div>
+                    <div>
+                        <span><img src="/icon/envelope.png" alt="" width="20px" height="20px"></span>
+                        <a href="mailto:mcsontecnology@gmail.com">mcsontechnology@gmail.com</a>
+                    </div>
+                    <div>
+                        <span><img src="/icon/phone.png" alt="" width="20px" height="20px"></span>
+                        <a href="tel:+60123456789">+60 12 3456789</a>
+                    </div>
+
+                    <div class="info-icon">
+                        <li><a target="_blank" href="https://www.facebook.com/tarumtkl/"><img src="/icon/facebook.png" alt="" width="32px" height="32px"></a></li>
+                        <li><a target="_blank" href="https://www.instagram.com/tarumt.official/?hl=en "><img src="/icon/instagram.png" alt="" width="32px" height="32px"></a></li>
+                        <li><a target="_blank" href="https://www.youtube.com/channel/UCqjsPpVnwjCRT5mgAgFo1ng?themeRefresh=1 "><img src="/icon/youtube.png" alt="" width="32px" height="32px"></a></li>
+                        <li><a target="_blank" href="https://www.google.com/search?q=tarumt&oq=tarumt&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIJCAEQLhgKGIAEMgcIAhAAGIAEMgYIAxBFGDsyBggEEEUYOzIGCAUQRRg8MgYIBhAFGEAyBggHEEUYPNIBCDI3MjlqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8 "><img src="/icon/google.png" alt="" width="32px" height="32px"></a></li>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Map -->
+            <div class="contact googlemap">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.53781216072!2d101.72179349678954!3d3.2152552000000023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc3843bfb6a031%3A0x2dc5e067aae3ab84!2sTunku%20Abdul%20Rahman%20University%20of%20Management%20and%20Technology%20(TAR%20UMT)!5e0!3m2!1sen!2smy!4v1702311770053!5m2!1sen!2smy" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            
+            </div>
+        </div>
+    </div>
+    <script src="/js/contact.js"></script>
+    <script src="/js/cart.js"></script>
+</body>
+</html>

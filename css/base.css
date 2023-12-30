@@ -1,0 +1,244 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url(/font/Poppins-Black.ttf);
+    font-style: normal;
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url(/font/Poppins-Bold.ttf);
+    font-style: normal;
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url(/font/Poppins-ExtraBold.ttf);
+    font-style: normal;
+    font-weight: 800;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url(/font/Poppins-ExtraLight.ttf);
+    font-style: normal;
+    font-weight: 200;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url(/font/Poppins-Light.ttf);
+    font-style: normal;
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url(/font/Poppins-Medium.ttf);
+    font-style: normal;
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url(/font/Poppins-Regular.ttf);
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url(/font/Poppins-SemiBold.ttf);
+    font-style: normal;
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url(/font/Poppins-Thin.ttf);
+    font-style: normal;
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: 'Carattere';
+    src: url(/font/Carattere-Regular.ttf);
+    font-style: italic;
+    font-weight: 400;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+}
+
+*::selection {
+    background: var(--main-color);
+    color: #fbfbfb;
+}
+
+body {
+    color: var(--text-color);
+    background-color: var(--bg-color);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 170px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+section {
+    padding: 70px 17%;
+}
+
+.nav {
+    justify-content: space-evenly;
+    list-style: none;
+    display: flex;
+    position: relative;
+    cursor: pointer;
+    align-items: center;
+}
+
+.nav a{
+    color: var(--text-color);
+    text-decoration: none;
+    position: relative;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    padding: 0 30px;
+}
+
+.nav a::after {
+    content: "";
+    position: absolute;
+    background-color: var(--main-color);
+    height: 3px;
+    width: 0;
+    left: 14px;
+    bottom: -10px;
+    transition: .5s;
+}
+
+.nav a:hover::after {
+    width: 78%;
+}
+
+.icon-cart {
+    position: relative;
+    transition: .3s;
+}
+
+.icon-cart:hover {
+    transform: scale(1.1);
+}
+
+.icon-cart span {
+    display: flex;
+    width: 25px;
+    height: 25px;
+    background-color: var(--main-color);
+    justify-content: center;
+    align-items: center;
+    color: #dcd2ff;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    right: -20px;
+}
+
+.footer {
+    padding: 80px 13% 70px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    gap: 3.5rem;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.footer .map {
+    padding-bottom: 50%;
+    position: relative;
+}
+
+.map iframe {
+    height: 100%;
+    width: 75%;
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+
+.footer-text {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, auto));
+    gap: 1.5rem;
+}
+
+.footer-content h4 {
+    color: var(--text-color);
+    margin-bottom: 1rem;
+    font-size: 20px;
+}
+
+.footer-content li {
+    margin-bottom: 16px;
+}
+
+.footer-content li a {
+    display: block;
+    color: #dcd2ff;
+    font-size: 15px;
+    font-weight: 400;
+    transition: all .40s ease;
+}
+
+.footer-content li a:hover {
+    transform: translateY(-3px) translateX(-5px);
+    color: #fff;
+}
+
+.footer-content p {
+    color: #dcd2ff;
+    font-size: 16px;
+    line-height: 30px;
+    margin: 20px 0;
+}
+
+.footer-map h4{
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
+    font-size: 20px;
+}
+
+.footer-icon {
+    width: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-icon img {
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: 30px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    transition: .4s;
+}
+
+.footer-icon img:hover {
+    transform: scale(1.2);
+}

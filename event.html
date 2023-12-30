@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+    <link rel="shortcut icon" href="/image/small-logo.PNG" type="image/x-icon">
+    <link rel="stylesheet" href="/css/root.css">
+    <link rel="stylesheet" href="/css/cart.css">
+    <link rel="stylesheet" href="/css/event.css">
+    <link rel="stylesheet" href="/css/base.css">
+    
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header class="header">
+        <h1 class="logo"><a href="#"><img src="/image/main-logo.png" alt="MCSON Technology" width="192" height="105"></a></h1>
+
+        <ul class="nav">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="product.html">Product</a></li>
+            <li><a href="event.html">Event</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="icon-cart">
+          <img src="/icon/cart-white.png" alt="" width="30px" height="30px">
+          <span>0</span>
+      </div>
+    </header>
+
+    <!-- Cart -->
+    <div class="cartTab">
+      <h1>Shopping Cart</h1>
+      <div class="listCart">
+      </div>
+      
+      <div class="cart-btn">
+          <button class="close">Close</button>
+          <button class="checkOut" onclick="checkOut()">Check Out</button>
+        </div>
+  </div>
+
+    <!-- Event -->
+    <section class="event">
+      <!-- Top -->
+      <div class="top">
+        <div class="content">
+          <h1>Events on <br>MCSON Technology</h1>
+          <p>Thank you for your continued support of MCSON. <br>In order to thank you for your company, we have launched a special promotion. <br>I hope you can enjoy the event and feel our sincere gratitude to you.</p>
+        </div>
+      </div>
+
+      <!-- Bottom -->
+      <div class="title">
+        <h1>List Events</h1>
+      </div>
+      <div class="events">
+        <div class="eventDetail">
+          <div class="eventLeft">
+            <div class="eventDate">
+              <p>25 Dec<br>2023</p>
+            </div>
+          </div>
+  
+          <div class="eventRight">
+            <h3>Bright Christmas</h3>
+          </div>
+  
+          <div class="eventDes">
+            <p>Perfect timing for gamers that are interested, as the Steam Winter Sale is just around the corner, so you will be prepared for all the latest games to play this holiday season.
+            </p>
+            <div class="period">
+              <h3>Period: </h3>
+              <p>1st of December 2023 - 31st of December 2023</p>
+            </div>
+            <div class="btn-detail">
+              <button type="button" id="xmas" onclick="xmax()">View Details</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="eventDetail">
+          <div class="eventLeft">
+            <div class="eventDate">
+              <p>1 Jan<br>2024</p>
+            </div>
+          </div>
+  
+          <div class="eventRight">
+            <h3>Cheers to 2024</h3>
+          </div>
+  
+          <div class="eventDes">
+            <p>Get ready to conquer new horizons in gaming with the ROG & TUF Gaming Laptop Promotion 2024! 
+              A world of exciting gifts awaits you when you choose your gaming path with our selected gaming laptop series!
+            </p>
+            <div class="period">
+              <h3>Period: </h3>
+              <p>1 January 2024 31 January 2024</p>
+            </div>
+            <div class="btn-detail">
+              <button type="button" id="ny" onclick="ny()">View Details</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="eventDetail">
+          <div class="eventLeft">
+            <div class="eventDate">
+              <p>9 Jan<br>2024</p>
+            </div>
+          </div>
+  
+          <div class="eventRight">
+            <h3>Soaring Into The Year Of The Dragon</h3>
+          </div>
+  
+          <div class="eventDes">
+            <p>Well would you look at the time, it’s almost Chinese New Year now, and to celebrate the upcoming Year of the Dragon. 
+            </p>
+            <div class="period">
+              <h3>Period: </h3>
+              <p>9th of January 2024 - 20th of February 2024</p>
+            </div>
+            <div class="btn-detail">
+              <button type="button" id="cny" onclick="cny()">View Details</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- form -->
+        <div class="form" onsubmit="return confirm('Thanks for your response.')">
+          <p>Do you Interested? <br> <span>Just leave your email.</span> </p>
+          <form>
+            <input type="email" name="email" id="email" placeholder="example@gmail.com" required>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+    </section>
+    <script src="/js/event.js"></script>
+    <script src="/js/cart.js"></script>
+</body>
+</html>

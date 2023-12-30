@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bright Christmas</title>
+    <link rel="stylesheet" href="/css/root.css">
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/cart.css">
+    <link rel="stylesheet" href="/css/eventDetail.css">
+    <link rel="shortcut icon" href="/image/small-logo.PNG" type="image/x-icon">
+</head>
+<body>
+
+    <!-- navbar -->
+    <header class="header">
+        <h1 class="logo"><a href="#"><img src="/image/main-logo.png" alt="MCSON Technology" width="192" height="105"></a></h1>
+
+        <ul class="nav">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="product.html">Product</a></li>
+            <li><a href="event.html">Event</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="icon-cart">
+            <img src="/icon/cart-white.png" alt="" width="30px" height="30px">
+            <span>0</span>
+        </div>
+    </header>
+
+    <!-- Cart -->
+    <div class="cartTab">
+        <h1>Shopping Cart</h1>
+        <div class="listCart">
+        </div>
+        
+        <div class="cart-btn">
+            <button class="close">Close</button>
+            <button class="checkOut" onclick="checkOut()">Check Out</button>
+        </div>
+    </div>
+
+    <!-- container -->
+    <section>
+        <div class="banner">
+            <div class="banner">
+                <img src="/image/banner-xmas.png" alt="" width="100%">
+            </div>
+        </div>
+
+        <div class="title">
+            <h1><span style="text-shadow: 0px 0px 30px ,0px 0px 30px  #58d68d ,0px 0px 30px  #58d68d ,0px 0px 10px #58d68d,0px 0px 10px #58d68d;">Bright Christmas </span> 🎄</h1>
+            <p>Perfect timing for gamers that are interested, as the Steam Winter Sale is just around the corner, so you will be prepared for all the latest games to play this holiday season.
+                MCSON Technologies gaming laptop will be on sale starting from <span style="color: #abebc6;">1st of December till 31st of December 2023</span>. The biggest deal is the 50% off for the all models of gaming laptops and come with freebies like limited edition gaming mouse.
+            </p>
+            <audio src="/audio/xmasSound.mp3" autoplay></audio>
+        </div>
+
+        <div class="eventTime">
+            <h1>Period: </h1>
+            <h3>1st of December - 31st of December 2023</h3>
+        </div>
+
+        <div class="eventLocation">
+            <h1>Location: </h1>
+            <h3>Ground Floor, Bangunan Tan Sri Khaw Kai Boh (Block A),<br> Jalan Genting Kelang, Setapak, 53300 Kuala Lumpur, <br> Federal Territory of Kuala Lumpur, Malaysia</h3>
+        </div>
+
+        <div class="table">
+            <h1>1 December - 10 December 2023</h1>
+        <table>
+            <thead>
+                <tr id="header">
+                    <th class="time">Time</th>
+                    <th class="activity">Activity</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>8am - 12am</td>
+                    <td class="detail">Old computer recycling activities, customers can enjoy certain discounts when recycling old equipment.</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+
+        <div class="table">
+            <h1>12 December - 20 December 2023</h1>
+        <table>
+            <thead>
+                <tr id="header">
+                    <th class="time">Time</th>
+                    <th class="activity">Activity</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>10am - 3pm</td>
+                    <td class="detail">Purchase a TUF series computer within a specific period of time and receive free hardware or software upgrades</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+
+        <div class="table">
+            <h1>25 December - 31 December 2023</h1>
+        <table>
+            <thead>
+                <tr id="header">
+                    <th class="time">Time</th>
+                    <th class="activity">Activity</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>8am - 5pm</td>
+                    <td class="detail">Customers can get additional discounts or gifts by checking in in the store or sharing photos on social media.</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+
+        <div class="last">
+            <div class="text">
+                <h1>How to participate in the event?</h1>
+                <p>Simply attend our digital showcase event with no pre-registration or threshold requirements. You are welcome to visit freely and get close contact with the latest technological products.</p>
+            </div>
+            <img src="/image/event-pic.png" alt="" height="300px" width="auto">
+        </div>
+
+        <div class="quote">
+            <p>&quot;Professional technology, right in front of you. We look forward to exploring the endless possibilities of the computer world with you!&quot;</p>
+            <button type="button" class="event-btn" onclick="eventLink()"><span></span>More Event</button>
+        </div>
+    </section>
+    
+    <script src="/js/cart.js"></script>
+    <script src="/js/event.js"></script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="/css/root.css">
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/product.css">
+    <link rel="stylesheet" href="/css/cart.css">
+    <link rel="shortcut icon" href="/image/small-logo.PNG" type="image/x-icon">
+</head>
+<body class="">
+    <!-- Navbar -->
+    <header class="header">
+        <h1 class="logo"><a href="#"><img src="/image/main-logo.png" alt="MCSON Technology" width="192" height="105"></a></h1>
+
+        <ul class="nav">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="product.html">Product</a></li>
+            <li><a href="event.html">Event</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="icon-cart">
+            <img src="/icon/cart-white.png" alt="" width="30px" height="30px">
+            <span>0</span>
+        </div>
+    </header>
+
+    <!-- Container -->
+    <section class="product">
+        <div class="container">
+            <div class="title"><b>Product Details</b></div>
+            <div class="detail">
+                <div class="image">
+                    <img src="">
+                </div>
+                <div class="content">
+                    <h1 class="name"></h1>
+                    <div class="price"></div>
+                    <button class="addCart">
+                        Add to Cart
+                    </button>
+                    <div class="description"></div>
+                </div>
+            </div>
+            
+            <div class="title"><b>Similar Product</b></div>
+            <div class="productList"></div>
+        </div>
+    </section>
+
+    <!-- Cart -->
+    <div class="cartTab">
+        <h1>Shopping Cart</h1>
+        <div class="listCart">
+        </div>
+        
+        <div class="cart-btn">
+            <button class="close">Close</button>
+            <button class="checkOut" onclick="checkOut()">Check Out</button>
+        </div>
+    </div>
+
+    <!-- Go back button -->
+    <section class="goback">
+        <button type="button" class="btn" onclick="backProduct()">View More</button>
+    </section>
+    
+    <!-- Footer -->
+    <section class="footer" id="footer">
+        <div class="footer-content">
+            <h4>Location</h4>
+            <p>Bangunan Tan Sri Khaw Kai Boh (Block A),<br>Jalan Genting Kelang, Setapak, <br>53300 Kuala Lumpur, Federal Territory of Kuala Lumpur</p>
+            
+            <div class="footer-icon">
+                <a target="_blank" href="https://www.facebook.com/tarumtkl/"><img src="/icon/facebook-purple.png" alt=""></a>
+                <a target="_blank" href="https://www.instagram.com/tarumt.official/?hl=en"><img src="/icon/instagram-purple.png" alt=""></a>
+                <a target="_blank" href="https://www.youtube.com/channel/UCqjsPpVnwjCRT5mgAgFo1ng?themeRefresh=1"><img src="/icon/youtube-purple.png" alt=""></a>
+                <a target="_blank" href="https://www.google.com/search?q=tarumt&oq=tarumt&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIJCAEQLhgKGIAEMgcIAhAAGIAEMgYIAxBFGDsyBggEEEUYOzIGCAUQRRg8MgYIBhAFGEAyBggHEEUYPNIBCDI3MjlqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8"><img src="/icon/google-purple.png" alt=""></a>
+            </div>
+        </div>
+
+        <div class="footer-map">
+            <h4>This is where we are</h4>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15934.15124864288!2d101.71625741738283!3d3.2152552000000023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc3843bfb6a031%3A0x2dc5e067aae3ab84!2sTunku%20Abdul%20Rahman%20University%20of%20Management%20and%20Technology%20(TAR%20UMT)!5e0!3m2!1sen!2smy!4v1701422202112!5m2!1sen!2smy" width="300" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+        <div class="footer-text">
+            <div class="footer-content">
+                <h4>Link</h4>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </div>
+    
+            <div class="footer-content">
+                <h4>Our Team</h4>
+                <li><a href="#">Low Jun Weng</a></li>
+                <li><a href="#">Eric Liau Yi Kai</a></li>
+                <li><a href="#">Shak Li Juin</a></li>
+                <li><a href="#">Pua Jie Hui</a></li>
+            </div>
+        </div>
+    </section>
+    <script src="/js/detail.js"></script>
+    <script src="/js/cart.js"></script>
+</body>
+</html>
